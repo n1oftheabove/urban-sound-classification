@@ -23,7 +23,7 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 
 # 2. Feature generation
 
-## 2.1. librosa features
+## 2.1. Librosa features
 
 * Librosa's `core.load()` function is used to load the sound files as an audio time series into Jupyter Notebook (together with their corresponding sampling rate). Librosa ensures that all sampling rates are set to 22.05 KHz and  normalises the data so the bit-depth values range between -1 and 1. Also all audio channels will be transformed into mono.
 
@@ -32,6 +32,11 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 Amplitude envelope of the waveform of a `dog_bark` |  Frequency spectrum of a `dog_bark`
 :-------------------------:|:-------------------------:
 ![](./img/power_spectrum_dog.png)  |  ![](./img/spectrum_dog.png)
+
+Amplitude envelope of the waveform of a `jackhammer` |  Frequency spectrum of a `jackhammer`
+:-------------------------:|:-------------------------:
+![](./img/power_spectrum_dog.png)  |  ![](./img/spectrum_dog.png)
+
 
 ## 2.2. Gathering all data in a dataframe
 
