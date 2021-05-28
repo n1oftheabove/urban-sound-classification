@@ -26,6 +26,12 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 
 * Librosa's `core.load()` function is used to load the sound files as an audio time series into Jupyter Notebook (together with their corresponding sampling rate). Librosa ensures that all sampling rates are set to 22.05 KHz and  normalises the data so the bit-depth values range between -1 and 1. Also all audio channels will be transformed into mono.
 
+* Librosa among other things allows to plot **amplitude over time** with `librosa.display.waveplot()` or **frequency spectra over time** with `librosa.display.specshow()`. In the following those are shown for `161922-3-1-5.wav` which is a `dog_bark`. Harmonic frequency multipliers are clearly visible. It's presence is an important feature of that class `dog_bark` which sets it apart from classes whose sounds don't emerge from resonant bodies (a `jackhammer` e.g.)
+
+Amplitude envelope of the waveform |  Frequency spectrum
+:-------------------------:|:-------------------------:
+![](./img/power_spectrum_dog.png)  |  ![](./img/spectrum_dog.png)
+
 ## 2.2. Gathering all data in a dataframe
 
 # 3. Machine learning
