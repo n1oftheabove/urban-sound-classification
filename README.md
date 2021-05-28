@@ -20,10 +20,12 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 * `siren`
 * `street_music`
 
-
 # 2. Feature generation
 
 ## 2.1. librosa features
+
+* Librosa's `core.load()` function is used to load the sound files as an audio time series into Jupyter Notebook (together with their corresponding sampling rate). Librosa ensures that all sampling rates are set to 22.05 KHz and  normalises the data so the bit-depth values range between -1 and 1. Also all audio channels will be transformed into mono.
+
 ## 2.2. Gathering all data in a dataframe
 
 # 3. Machine learning
@@ -33,6 +35,10 @@ sklearn pipepline, standard scaler, random forest, model export
 ## Hyperparameter tuning
 
 # Results
+
+# Outlook
+
+* 
 
 # Structure of the project
 
