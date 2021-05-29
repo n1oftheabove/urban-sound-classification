@@ -35,7 +35,7 @@ Amplitude envelope of the waveform of a `dog_bark` |  Frequency spectrum of a `d
 
 Amplitude envelope of the waveform of a `jackhammer` |  Frequency spectrum of a `jackhammer`
 :-------------------------:|:-------------------------:
-![](./img/power_spectrum_dog.png)  |  ![](./img/spectrum_dog.png)
+![](./img/power_spectrum_jackhammer.png)  |  ![](./img/spectrum_jackhammer.png)
 
 
 ## 2.2. Gathering all data in a dataframe
