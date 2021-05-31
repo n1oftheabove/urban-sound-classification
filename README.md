@@ -29,21 +29,43 @@ Librosa's `core.load()` function is used to load the sound files as an audio tim
 
 How the computer distinguishes classes according to the audio features is illustrated in the following. Librosa allows to plot among other things **amplitude over time** with `librosa.display.waveplot()` or **frequency spectra over time** with `librosa.display.specshow()`. Those are shown for a `dog_bark` in the following.  whose spectra are shown afterwards.
 
-Amplitude envelope of the waveform of a `dog_bark` |  Frequency spectrum of a `dog_bark`
-:-------------------------:|:-------------------------:
-![](./img/power_spectrum_dog.png)  |  ![](./img/spectrum_dog.png)
-
-Filename `161922-3-1-5.wav`
+<table>
+    <thead>
+        <tr>
+          <th>Amplitude envelope of the waveform of a <code>dog_bark</code></th>
+          <th>Frequency spectrum of a <code>dog_bark</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><img src="./img/power_spectrum_dog.png"></td>
+            <td><img src="./img/spectrum_dog.png"></td>
+        </tr>
+        <tr>
+          <td colspan=2 align="center">Filename <code>161922-3-1-5.wav</code></td>
+        </tr>
+    </tbody>
+</table>
 
 Harmonic frequency multipliers are clearly visible. It's presence is an important feature of that class `dog_bark` which sets it apart from classes whose sounds don't emerge from resonant bodies, let's say for example a `jackhammer`:
 
-
-Amplitude envelope of the waveform of a `jackhammer` |  Frequency spectrum of a `jackhammer`
-:-------------------------:|:-------------------------:
-![](./img/power_spectrum_jackhammer.png)  |  ![](./img/spectrum_jackhammer.png)
-
-Filename `103074-7-0-0.wav`
-
+<table>
+    <thead>
+        <tr>
+          <th>Amplitude envelope of the waveform of a <code>jackhammer</code></th>
+          <th>Frequency spectrum of a <code>jackhammer</code></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><img src="./img/power_spectrum_jackhammer.png"></td>
+            <td><img src="./img/spectrum_jackhammer.png"></td>
+        </tr>
+        <tr>
+          <td colspan=2 align="center">Filename <code>103074-7-0-0.wav</code></td>
+        </tr>
+    </tbody>
+</table>
 
 ## 2.2. Gathering all data in a dataframe
 
@@ -64,17 +86,15 @@ sklearn pipepline, standard scaler, random forest, model export
 <!--
 # Structure of the project
 
-folders:
-
-* `data`
-* `img`
-
 notebooks:
 
 |        filename           |    description     |
 |:--------------------------|--------------------|
-| `final_project.ipynb`                | main notebook |
+| `final_project.ipynb`     | main notebook |
 
+folders:
+
+* `img`
 
 modules:
 
