@@ -64,17 +64,15 @@ sklearn pipepline, standard scaler, random forest, model export
 <!--
 # Structure of the project
 
-folders:
-
-* `data`
-* `img`
-
 notebooks:
 
 |        filename           |    description     |
 |:--------------------------|--------------------|
-| `final_project.ipynb`                | main notebook |
+| `final_project.ipynb`     | main notebook |
 
+folders:
+
+* `img`
 
 modules:
 
