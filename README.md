@@ -77,6 +77,11 @@ sklearn pipepline, standard scaler, random forest, model export
 
 # Results
 
+## AUC /ROC
+## Confusion Matrix
+
+## Modelling using the predefined folds
+
 # Outlook
 
 * User can be enabled to provide feature generation configurations by YAML.
