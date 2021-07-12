@@ -81,8 +81,38 @@ sklearn pipepline, standard scaler, random forest, model export
 
 # Results
 
-## AUC /ROC
 ## Confusion Matrix
+
+For a baseline model, a Random Forest classifier from the `sklearn.ensemble` was trained with a test ratio of 0.33 and default values being:
+
+* `n_estimators=100`,
+* `criterion='gini'`,
+* `max_depth=None`,
+* `min_samples_split=2`,
+* `min_samples_leaf=1`,
+* `min_weight_fraction_leaf=0.0`,
+* `max_features='auto'`,
+* `max_leaf_nodes=None`,
+* `min_impurity_decrease=0.0`,
+* `min_impurity_split=None`,
+* `bootstrap=True`,
+* `oob_score=False`,
+* `n_jobs=None`,
+* `random_state=None`,
+* `verbose=0`,
+* `warm_start=False`,
+* `class_weight=None`,
+* `ccp_alpha=0.0`,
+* `max_samples=None`,
+
+It achieved an accuracy score of 0.82 but looking at the confusion matrix and the errors for the predicted classes it becomes apparent where the model is struggling: 
+
+Confusion matrix results             |  Confusion matrix prediction errors (main diagonal set to 0)
+:-------------------------:|:-------------------------:
+![](img/confmat_baseline_rf.png)  |  ![](img/confmat_errors_baseline_rf.png)
+
+## AUC /ROC
+
 ## Feature importance & interpretation
 
 ## Modelling using the predefined folds
