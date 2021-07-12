@@ -89,6 +89,14 @@ sklearn pipepline, standard scaler, random forest, model export
 
 # Outlook
 
+### Further development
+
+* Build an inference API (with FastAPI and SpaCy maybe)
+* Package the API with Docker / docker-compose
+* Eventually build front-end app MVPs for mobile to record & infer sound.
+
+
+### Model improvement (Backend) 
 * User can be enabled to provide feature generation configurations by YAML.
 * In this project, audio features were calculated mathematically directly from the audio time series and bitrates of the individual sound files. These audio features then spanned the feature space. Another approach which sounds rather unorthodox at first is to generate for every song a frequency spectrum as an image and then use this image as an input for a Convolutional Neural Network to train and predict the class (for example [3]). Accuracy scores of 92% are reported in this case.
 
