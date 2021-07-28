@@ -23,11 +23,15 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 * `siren`
 * `street_music`
 
+## 1.1 Data exploration
+
+![](img/duration_distribution.png)
+
 # 2. Feature generation
 
 ## 2.1. Librosa features
 
-Librosa's `core.load()` function is used to load the sound files as an audio time series into Jupyter Notebook (together with their corresponding sampling rate). Librosa ensures that all sampling rates are set to 22.05 KHz and normalises the data so the bit-depth values range between -1 and 1. Also all audio channels will be transformed into mono. In a next step, for all songs, spectral features were then calculated (user can specify those in a Python dictionary. YAML support will be implemented later) making use of the `librosa.feature` [functions](https://librosa.org/doc/main/feature.html#spectral-features). For each feature generated, statistical measures can be applied (default: `np.std`, `np.mean`). In principle, the code is flexible and the user can add / remove spectral features as well as statistical measures. Those resulting features span the the feature space X for the actual machine learning problem, in which the sound class *y* is to be predicted.
+Librosa's `core.load()` function is used to load the sound files as an audio time series into Jupyter Notebook (together with their corresponding sampling rate). Librosa ensures that all sampling rates are set to 22.05 KHz and normalises the data so the bit-depth values range between -1 and 1. Also all audio channels will be transformed into mono. In a next step, for all songs, spectral features were then calculated (user can specify those in a Python dictionary. YAML support will be implemented later) making use of the `librosa.feature` [functions](https://librosa.org/doc/main/feature.html#spectral-features). For each feature generated, statistical measures can be applied (default: `np.std`, `np.mean`). In principle, the code is flexible and the user can add / remove spectral features as well as statistical measures. Those resulting features span the feature space X for the actual machine learning problem, in which the sound class *y* is to be predicted.
 
 How the computer distinguishes classes according to the audio features is illustrated in the following. Librosa allows to plot among other things **amplitude over time** with `librosa.display.waveplot()` or **frequency spectra over time** with `librosa.display.specshow()`. Those are shown for a `dog_bark` in the following.  whose spectra are shown afterwards.
 
