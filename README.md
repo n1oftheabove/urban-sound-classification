@@ -25,6 +25,8 @@ The source is the *UrbanSound8K* [dataset](https://urbansounddataset.weebly.com/
 
 ## 1.1 Data exploration
 
+Except the classes `car_horn` and `gunshot`, all other classes are represented fairly evenly with around 1000 sound files. Something to keep in mind for later which makes sampling procedures necessary. Most sound files show a duration of 4 seconds but throughout the classes the duration can be spread out over the whole 0 to 4 second range (again, `gun_shot` e.g.).
+
 ![](img/duration_distribution.png)
 
 # 2. Feature generation
