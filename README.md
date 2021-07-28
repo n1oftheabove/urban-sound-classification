@@ -121,10 +121,17 @@ Confusion matrix results             |  Confusion matrix prediction errors (main
 
 ### Further development
 
-* Build an inference API (with FastAPI and SpaCy maybe)
-* Package the API with Docker / docker-compose
-* Eventually build front-end app MVPs for mobile to record & infer sound.
-
+* Build an inference API (with FastAPI and SpaCy maybe, hug for terminal access)
+* Build a web app with Flask or Streamlit featuring sound inference.
+* Build front-end app MVPs for mobile for sound inference.
+* Package the model with Docker / docker-compose, or in a first step just as Python module e.g. 
+    ```python
+    from usc import UrbanSoundClassifier
+    
+    u = UrbanSoundClassifier()
+    u.audio = "music/testfile.wav"
+    u.predict()
+    ```
 
 ### Model improvement (Backend) 
 * User can be enabled to provide feature generation configurations by YAML.
