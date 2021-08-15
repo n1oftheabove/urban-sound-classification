@@ -75,15 +75,17 @@ Harmonic frequency multipliers are clearly visible. It's presence is an importan
     </tbody>
 </table>
 
-## 2.2. Gathering all data in a dataframe
+<!-- ## 2.2. Gathering all data in a dataframe -->
 
 # 3. Machine learning
 
-sklearn pipepline, standard scaler, random forest, model export
+<!-- sklearn pipepline, standard scaler, random forest, model export
 
 ## Hyperparameter tuning
 ## Feature selection
 ### Recursive Feature elimination
+
+-->
 
 # Results
 
@@ -117,11 +119,16 @@ Confusion matrix results             |  Confusion matrix prediction errors (main
 :-------------------------:|:-------------------------:
 ![](img/confmat_baseline_rf.png)  |  ![](img/confmat_errors_baseline_rf.png)
 
+For example `dog_barking` and `street_music` is relatively often classified by the model as `children_playing`. Here and for the other classification errors a thorough statistical comparison of the features and a possible subsequent generation of new features with the help of **librosa** which would hopefully contribute to a better distinction between these classes could turn out rewarding.
+
+<!-- 
+
 ## AUC /ROC
 
 ## Feature importance & interpretation
 
 ## Modelling using the predefined folds
+-->
 
 # Outlook
 
